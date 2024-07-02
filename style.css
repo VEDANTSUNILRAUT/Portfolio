@@ -1,0 +1,561 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+/*<---------------------------------------Body styling----------------------------------------------> */
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+/*<---------------------------------------Navbar styling----------------------------------------------> */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  width: 97%;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: #121212;
+  border: 2px solid rgb(154, 81, 222);
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 0 15px rgb(154, 81, 222);
+}
+
+.namelogo {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+.btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #9a51de;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* border: 1px solid #9a51de; */
+  font-size: 1rem;
+  font-weight: 650;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+.btn:hover {
+  transform: scale(1.1); /* Button grows when hovered */
+}
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(154, 81, 222);
+  font-size: 1.04rem;
+}
+nav ul li a.active {
+  color: rgb(154, 81, 222); /* Background color for active state */
+}
+
+.left {
+  font-size: 2rem;
+  color: #fff;
+}
+/* navbar section highlighter underline  */
+nav ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Start with transparent */
+  transform: scaleX(0); /* Initially no underline */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  transform-origin: bottom left;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after {
+  transform: scaleX(1); /* Fully underline on hover or when active */
+  background-color: rgb(154, 81, 222); /* Color of the underline */
+  box-shadow: 0 0 15px rgb(154, 81, 222);
+}
+/*<---------------------------------------Main Sections----------------------------------------------> */
+
+main {
+  background-color: #121212; /* Dark background color for sections */
+  color: #fff; /* Light text color for sections */
+}
+/*<---------------------------------------Main Sections : first section----------------------------------------------> */
+#element {
+  color: #9a51de;
+}
+#v {
+  display: flex;
+  position: relative;
+  left: 180px;
+}
+#r {
+  font-size: 30px;
+  margin: 0px 12px 0px 0px;
+}
+.firstSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #121212; /* Dark background */
+}
+
+.leftSection,
+.rightSection {
+  width: 50%;
+  padding: 20px;
+}
+
+.leftSection {
+  font-size: 2rem;
+  color: #f0f0f0; /* Light color for text for better visibility */
+}
+
+.leftSection h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leftSection .purple {
+  color: #9a51de;
+  font-size: 3rem; /* Larger font size for emphasis */
+}
+
+.leftSection .down p {
+  font-size: 1.2rem;
+  color: #c0c0c0; /* Slightly lighter grey color for paragraph */
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #9a51de; /* Purple background to match the theme */
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1); /* Button grows when hovered */
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightSection img {
+  width: 400px;
+  height: 500px;
+  border-radius: 35%;
+  /* border: 2px solid #ac6de6; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 2px 12px #9a51de; */
+  filter: drop-shadow(2px 2px 30px #8e3cdab9);
+  /* background-color: #ac6de6; */
+  /* background: linear-gradient(87deg, #00f4e8, #8534b9); */
+}
+
+/*<---------------------------------------Main Sections : Second section----------------------------------------------> */
+.secondSection {
+  height: 100%;
+  margin-bottom: 100px;
+  text-align: center;
+}
+/* sceond srction Logo and Heading:Skills */
+.logoimg {
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  padding: 4px;
+  margin: 2px;
+}
+
+.secondSection h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#firstlogo {
+  margin-bottom: 70px;
+}
+#hex {
+  display: flex;
+}
+.hexagon {
+  width: 370px;
+  height: 370px;
+  background-color: #2f0a52;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hexagon:hover {
+  width: 380px;
+  height: 380px;
+  transition: transform 1s ease-in-out;
+  transform: scale(0.9); /* Zoom out effect */
+  /* transform: rotateY(360deg); */
+}
+
+.hex .hexagon h4 {
+  color: #fff; /* Set text color to white */
+  margin: 0; /* Remove default margin */
+  position: relative;
+  bottom: 25px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  position: absolute;
+  top: 60px; /* Adjusted to center the 'Front-End' heading at the top of the hexagon */
+  width: 100%;
+  font-style: bold;
+  font-size: 1.5rem;
+  font-weight: 750;
+}
+.hexfirst {
+  left: 188px;
+  bottom: 45px;
+}
+.hexsecond {
+  left: 204px;
+  bottom: 45px;
+}
+.hexthird {
+  left: 380px;
+  bottom: 122px;
+}
+.hexfour {
+  left: 397px;
+  bottom: 122px;
+}
+.hexfive {
+  bottom: 415px;
+  left: 220px;
+}
+.squares {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.square {
+  border: px solid #9a51de;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 650;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 30px;
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+.square:hover {
+  box-shadow: 5px 5px 15px #9a51de;
+}
+/* .s1 {
+  position: relative;
+  right: 65px;
+  bottom: 55px;
+}
+.s2 {
+  position: relative;
+  left: 60px;
+  bottom: 119px;
+} */
+.s1,
+.s2 {
+  position: static; /* Removed relative positioning to align squares in one row */
+}
+/* .langimg {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+.langimg2 {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+} */
+.langimg,
+.langimg2,
+.langimg3 {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+.langname {
+  margin: 0px 0px 0px 7px;
+}
+
+/*<---------------------------------------Main Sections : Third section----------------------------------------------> */
+.thirdSection {
+  /* background-color: lightblue; */
+  height: 100%;
+  margin-bottom: 100px;
+}
+.thirdSection h1 {
+  /* width: 10%;
+                    margin: auto; */
+  font-size: 2.5rem;
+  color: white;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.box1,
+.box2,
+.box3 {
+  background-color: #121212;
+  width: 585px;
+  max-height: 250px; /* Initial max-height, adjust as needed */
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 0px 20px 6px rgb(154, 81, 222);
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.content {
+  /* Ensure this is enough to contain your content */
+  height: auto;
+}
+
+.box1:hover,
+.box2:hover {
+  max-height: 500px; /* Max height on hover, adjust to fit content */
+}
+.box3:hover {
+  max-height: 800px;
+}
+
+.boximg {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 18px;
+}
+
+.header,
+#collagename {
+  display: flex;
+  /* justify-content: center; Centered #collagename text */
+}
+
+#collagename {
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+#branch {
+  font-size: 14px;
+}
+
+/*<---------------------------------------Main Sections : Fourth section----------------------------------------------> */
+.fourthSection {
+  /* background-color: lightsalmon; */
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.fourthSection h1 {
+  /* width: 10%;
+                    margin: auto; */
+  font-size: 2.5rem;
+  color: white;
+}
+/*<---------------------------------------Main Sections : Fifth section----------------------------------------------> */
+.fifthSection {
+  height: 100%;
+  margin-bottom: 100px;
+}
+.fifthSection h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.bigbox {
+  display: flex;
+  justify-content: center;
+}
+.smallbox {
+  background-color: #121212;
+  width: 300px;
+  height: 260px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 0px 20px 6px rgb(154, 81, 222);
+  /* overflow: hidden; */
+  /* transition: max-height 0.5s ease; */
+}
+.smallbox1 {
+  margin: 20px 50px 0px 80px;
+}
+.smallbox2 {
+  margin: 20px 50px 0px 100px;
+}
+/* --------------------Footer Section CSS--------------------------- */
+footer {
+  width: 97%;
+  height: 100%;
+  padding: 25px;
+  text-align: center; /* Center align text within the footer */
+}
+#contact {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+form {
+  box-shadow: -1px 0px 20px 6px rgb(154, 81, 222);
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background-color: #121212;
+  /* position: relative;
+  left: 540px; */
+  border-radius: 12px;
+  padding: 20px;
+}
+form > input {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: #121212;
+  color: white;
+  font-size: poppins;
+}
+form > input:hover {
+  box-shadow: 5px 5px 15px #9a51de;
+}
+#message {
+  height: 250px;
+  width: 85%;
+  border-radius: 12px;
+  /* position: relative;
+  left: 13px; */
+  background-color: #121212;
+  color: white;
+  padding: 10px;
+}
+#message:hover {
+  box-shadow: 5px 5px 15px #9a51de;
+}
+#submit {
+  background-color: #9a51de;
+  box-shadow: 0px 0px 0px #9a51de;
+}
+#Contact > h1 {
+  border: 1px solid red;
+}
+/* for the button of scrolling to top */
+#scrollToTopBtn {
+  height: 50px;
+  width: 50px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #9a51de; /* Set background color */
+  box-shadow: -1px 0px 20px 6px rgb(154, 81, 222);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #333; /* Add a dark-grey background on hover */
+}
